@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     loadBooks();
-    loadNotes();
 });
 
 function initNavigation() {
@@ -99,30 +98,3 @@ function createBookCardHTML(book, index) {
     `;
 }
 
-function loadNotes() {
-    const container = document.getElementById('notes-container');
-    if (!container) return;
-
-    if (typeof notesData === 'undefined' || !Array.isArray(notesData)) {
-        // Fallback to the link card if no local notes found (or keep both)
-        return;
-    }
-
-    if (notesData.length === 0) return;
-
-    // Clear the container (removes the notion link placeholder if we want to replace it entirely, 
-    // OR we can append. User asked to "organize it directly". 
-    // I will replace the default content with the detailed list.)
-
-    const notesHTML = notesData.map(note => `
-        <article class="note-entry" id="${note.id}">
-            <h2>${note.title}</h2>
-            <div class="note-meta">${note.date}</div>
-            <div class="note-content">
-                ${note.content}
-            </div>
-        </article>
-    `).join('');
-
-    container.innerHTML = notesHTML;
-}

@@ -61,5 +61,33 @@ const booksData = [
         "isbn": "9781668096871",
         "review": "Currently Reading",
         "rating": null
+    },
+    {
+        "title": "Zero to One",
+        "author": "Peter Thiel & Blake Masters",
+        "isbn": "9780804139298",
+        "review": "Currently Reading",
+        "rating": null
+    },
+    {
+        "title": "The Philosopher in the Valley",
+        "author": "Michael Steinberger",
+        "isbn": "9781668012956",
+        "review": "Currently Reading",
+        "rating": null
+    },
+    {
+        "title": "Deng Xiaoping and the Transformation of China",
+        "author": "Ezra F. Vogel",
+        "isbn": "9780674055445",
+        "review": "Currently Reading",
+        "rating": null
+    },
+    {
+        "title": "The Art of Living",
+        "author": "Epictetus",
+        "isbn": "9780061286056",
+        "review": "Currently Reading",
+        "rating": null
     }
 ];
