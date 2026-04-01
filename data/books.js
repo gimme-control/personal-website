@@ -33,14 +33,15 @@ const booksData = [
         "rating": 5
     },
 
-    // --- CURRENTLY READING ---
     {
         "title": "Apple in China",
         "author": "Patrick McGee",
         "isbn": "9781668053379",
-        "review": "Currently Reading",
-        "rating": null
+        "review": "apple thought they were getting a steal when their vendors in china were giving them the deal of the century by taking on all the risk. little did they know...",
+        "rating": 5
     },
+
+    // --- CURRENTLY READING ---
     {
         "title": "Only the Paranoid Survive",
         "author": "Andrew S. Grove",
@@ -87,6 +88,20 @@ const booksData = [
         "title": "The Art of Living",
         "author": "Epictetus",
         "isbn": "9780061286056",
+        "review": "Currently Reading",
+        "rating": null
+    },
+    {
+        "title": "Flash Boys",
+        "author": "Michael Lewis",
+        "isbn": "9780393244663",
+        "review": "Currently Reading",
+        "rating": null
+    },
+    {
+        "title": "Chaos Monkeys",
+        "author": "Antonio García Martínez",
+        "isbn": "9780062458193",
         "review": "Currently Reading",
         "rating": null
     }
