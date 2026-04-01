@@ -8,7 +8,7 @@ const booksData = [
         "title": "House of Huawei",
         "author": "Eva Dou",
         "isbn": "9780593544631",
-        "review": "W renzhengfei, huawei prolly more relevant in the chip war now",
+        "review": "renzhengfei is smth else. huawei prolly more relevant in the chip war now and they also building their own fab.",
         "rating": 5
     },
     {
