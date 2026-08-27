@@ -1,6 +1,6 @@
 // This file allows you to add/remove books from your bookshelf.
 // Provide the title, author, year, and a short review.
-// Images will be fetched dynamically using the ISBN.
+// Covers load from Open Library by ISBN, then Google Books if that misses.
 
 const booksData = [
     // --- READ ---
@@ -40,6 +40,13 @@ const booksData = [
         "review": "apple thought they were getting a steal when their vendors in china were giving them the deal of the century by taking on all the risk. little did they know...",
         "rating": 5
     },
+    {
+        "title": "Life at the Speed of Play",
+        "author": "Mark Pincus",
+        "isbn": "9780063352575",
+        "review": "",
+        "rating": 5
+    },
 
     // --- CURRENTLY READING ---
     {
@@ -71,13 +78,6 @@ const booksData = [
         "rating": null
     },
     {
-        "title": "The Philosopher in the Valley",
-        "author": "Michael Steinberger",
-        "isbn": "9781668012956",
-        "review": "Currently Reading",
-        "rating": null
-    },
-    {
         "title": "Deng Xiaoping and the Transformation of China",
         "author": "Ezra F. Vogel",
         "isbn": "9780674055445",
@@ -92,16 +92,23 @@ const booksData = [
         "rating": null
     },
     {
-        "title": "Flash Boys",
-        "author": "Michael Lewis",
-        "isbn": "9780393244663",
+        "title": "The Three-Body Problem",
+        "author": "Cixin Liu",
+        "isbn": "9780765382030",
         "review": "Currently Reading",
         "rating": null
     },
     {
-        "title": "Chaos Monkeys",
-        "author": "Antonio García Martínez",
-        "isbn": "9780062458193",
+        "title": "The Everything Store",
+        "author": "Brad Stone",
+        "isbn": "9780316219266",
+        "review": "Currently Reading",
+        "rating": null
+    },
+    {
+        "title": "Central Banking 101",
+        "author": "Joseph Wang",
+        "isbn": "9780999136744",
         "review": "Currently Reading",
         "rating": null
     }

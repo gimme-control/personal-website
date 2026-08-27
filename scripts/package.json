@@ -1,15 +1,11 @@
 {
-  "name": "scripts",
+  "name": "site-scripts",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node build-blog.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "puppeteer": "^24.33.0"
+    "marked": "^15.0.6"
   }
 }

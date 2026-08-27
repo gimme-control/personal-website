@@ -102,6 +102,7 @@ p {
     overflow: hidden;
     cursor: default;
     aspect-ratio: 2/3;
+    background: var(--card-bg);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s;
 }
@@ -208,116 +209,127 @@ p {
     margin-bottom: 0;
 }
 
-/* Notion Link Card */
-.notion-link-card {
+/* Blog */
+.blog-nav {
+    margin-bottom: 48px;
     display: flex;
-    align-items: center;
     gap: 20px;
-    padding: 24px;
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
+}
+
+.blog-nav a {
+    color: var(--muted);
     text-decoration: none;
-    transition: all 0.2s ease;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.blog-nav a:hover {
+    color: var(--accent);
+}
+
+.blog-list {
+    list-style: none;
     margin-top: 24px;
 }
 
-.notion-link-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--muted);
-    background: #252525;
-}
-
-.notion-icon {
-    font-size: 32px;
-    color: var(--fg);
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-}
-
-.notion-text h3 {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--accent);
-    margin-bottom: 4px;
-}
-
-.notion-text p {
-    font-size: 14px;
-    color: var(--muted);
-    margin: 0;
-}
-
-.notion-arrow {
-    margin-left: auto;
-    color: var(--muted);
-    transition: transform 0.2s;
-}
-
-.notion-link-card:hover .notion-arrow {
-    transform: translateX(4px);
-    color: var(--accent);
-    transform: translateX(4px);
-    color: var(--accent);
-}
-
-/* Notes List */
-#notes-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 32px;
-}
-
-.note-entry {
-    border-bottom: 1px dotted var(--border);
-    padding-bottom: 32px;
-}
-
-.note-entry h2 {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--accent);
-    margin-bottom: 8px;
-}
-
-.note-meta {
-    font-size: 13px;
-    color: var(--muted);
-    font-family: monospace;
-    /* Redundant if body is monospace, but explicit is good */
+.blog-list li {
     margin-bottom: 16px;
-    opacity: 0.7;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: baseline;
 }
 
-.note-content {
-    font-size: 15px;
+.blog-list a {
+    color: var(--fg);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 2px;
+    transition: border-color 0.2s;
+}
+
+.blog-list a:hover {
+    border-color: var(--accent);
+}
+
+.blog-date {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.blog-meta {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.blog-content {
     color: var(--fg);
     line-height: 1.7;
 }
 
-.note-content p {
-    margin-bottom: 16px;
-    color: var(--fg);
-    /* Override global p muted */
-}
-
-.note-content ul {
-    margin-left: 20px;
-    margin-bottom: 16px;
+.blog-content p,
+.blog-content ul,
+.blog-content ol {
+    margin-bottom: 20px;
     color: var(--fg);
 }
 
-.note-content blockquote {
-    border-left: 2px solid var(--accent);
+.blog-content ul,
+.blog-content ol {
+    padding-left: 24px;
+}
+
+.blog-content li {
+    margin-bottom: 8px;
+}
+
+.blog-content a {
+    color: var(--fg);
+    border-bottom: 1px solid var(--border);
+    text-decoration: none;
+}
+
+.blog-content a:hover {
+    border-color: var(--accent);
+}
+
+.blog-content blockquote {
+    border-left: 2px solid var(--border);
     padding-left: 16px;
-    margin: 16px 0;
+    margin: 24px 0;
+    color: var(--muted);
     font-style: italic;
+}
+
+.blog-content pre {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.blog-content code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+}
+
+.blog-content :not(pre) > code {
+    background: var(--card-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.blog-content h2,
+.blog-content h3 {
+    color: var(--accent);
+    margin: 32px 0 16px;
+}
+
+.blog-empty {
     color: var(--muted);
 }
 
