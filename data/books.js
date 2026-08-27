@@ -44,7 +44,7 @@ const booksData = [
         "title": "Life at the Speed of Play",
         "author": "Mark Pincus",
         "isbn": "9780063352575",
-        "review": "life at the speed of play is an incredible book by mark pincus that gives detailed insights on how to build consumer apps. lots of spicy takes imo. moral arbitrage etc. extremely useful for me to build my own product, arbitale. i loved this book a lot im considering writing a blog abt it",
+        "review": "incredible book by mark pincus that gives detailed insights on how to build consumer apps. lots of spicy takes imo. moral arbitrage etc. considering writing a blog abt it",
         "rating": 5
     },
 
